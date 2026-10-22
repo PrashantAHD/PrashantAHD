@@ -25,12 +25,13 @@
 <rect x=".5" y=".5" width="489" height="235" rx="16" fill="url(#fbg)" stroke="url(#fbd)"/>
 <rect class="comet" x="1" y="1" width="488" height="234" rx="15" pathLength="100" stroke="#00e5ff" stroke-width="2" stroke-dasharray="10 90" filter="url(#glow)"/>
 <rect x="22" y="20" width="101" height="22" rx="11" fill="#00e5ff" fill-opacity=".1" stroke="#00e5ff" stroke-opacity=".5"/><text class="mono" x="72" y="35" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="#00e5ff">● PUBLIC REPO</text>
+<rect x="131" y="20" width="94" height="22" rx="11" fill="#8b5cf6" fill-opacity=".12" stroke="#8b5cf6" stroke-opacity=".6"/><text class="mono" x="178" y="35" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="#8b5cf6">CLIENT · CSX</text>
 <text class="mono" x="468" y="35" text-anchor="end" font-size="11.5" fill="#7d8aa5" xml:space="preserve" style="white-space:pre"><tspan fill="#3572A5">●</tspan> Python</text>
 <text class="sans" x="22" y="82" font-size="23" font-weight="800" fill="#e6edf3">github_access_tool</text>
 <text class="mono" x="22" y="106" font-size="12" fill="#00e5ff">› GitHub org access ops, zero dependencies.</text>
 <text class="sans" x="22" y="134" font-size="13.5" fill="#b4bfd3">Bulk team membership, repo permissions, Actions secret access</text>
-<text class="sans" x="22" y="153" font-size="13.5" fill="#b4bfd3">and Copilot cloud-agent enablement, with confirmations and per-</text>
-<text class="sans" x="22" y="172" font-size="13.5" fill="#b4bfd3">repo results.</text>
+<text class="sans" x="22" y="153" font-size="13.5" fill="#b4bfd3">and Copilot cloud-agent enablement, significantly cutting manual</text>
+<text class="sans" x="22" y="172" font-size="13.5" fill="#b4bfd3">access-request effort.</text>
 <g><rect x="22.0" y="196.0" width="85.1" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="64.5" y="210.8" text-anchor="middle" class="mono" font-size="10.5" fill="#e6edf3">GitHub API</text></g>
 <g><rect x="114.1" y="196.0" width="39.5" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="133.9" y="210.8" text-anchor="middle" class="mono" font-size="10.5" fill="#e6edf3">IAM</text></g>
 <g><rect x="160.6" y="196.0" width="85.1" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="203.2" y="210.8" text-anchor="middle" class="mono" font-size="10.5" fill="#e6edf3">Automation</text></g>

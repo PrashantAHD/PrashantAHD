@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="396" viewBox="0 0 1000 396" fill="none" role="img" aria-label="Impact: career timeline and measured outcomes">
+<title>Impact: career timeline and measured outcomes</title>
+<style>
+.mono{font-family:'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.sans{font-family:'Segoe UI','Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.tile{animation:tup .7s ease-out both}
+@keyframes tup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.3}}
+.flow{stroke-dasharray:3 9;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-12}}
+</style>
+<defs>
+  <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#0b1226"/>
+  </linearGradient>
+  <linearGradient id="fbd" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#00e5ff" stop-opacity=".75"/>
+    <stop offset=".5" stop-color="#8b5cf6" stop-opacity=".35"/>
+    <stop offset="1" stop-color="#ff2e88" stop-opacity=".55"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x=".5" y=".5" width="999" height="395" rx="16" fill="url(#fbg)" stroke="url(#fbd)"/>
+<defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/>
+<stop offset="1" stop-color="#00e5ff"/></linearGradient>
+<linearGradient id="tl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset=".6" stop-color="#8b5cf6"/>
+<stop offset="1" stop-color="#ff2e88" stop-opacity=".3"/></linearGradient></defs>
+<rect x="20" y="18" width="360" height="360" rx="12" fill="#ffffff" fill-opacity=".02" stroke="#14304a"/>
+<text class="mono" x="38" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#7d8aa5">MISSION LOG // CAREER</text>
+<line x1="48" y1="72" x2="48" y2="350" stroke="url(#tl)" stroke-width="2"/>
+<line x1="48" y1="72" x2="48" y2="350" stroke="#fff" stroke-opacity=".6" stroke-width="2" class="flow"/>
+<circle cx="48" cy="78" r="9" fill="#00e5ff" fill-opacity=".3" class="pulse"/>
+<circle cx="48" cy="78" r="6" fill="#05070f" stroke="#00e5ff" stroke-width="2.5"/>
+<text class="mono" x="70" y="82" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#00e5ff">JAN 2024 — PRESENT</text>
+<text class="sans" x="70" y="109" font-size="21" font-weight="800" fill="#e6edf3">AHEAD</text>
+<text class="mono" x="70" y="129" font-size="11.5" fill="#7d8aa5">DevOps &amp; Cloud Security Engineer</text>
+<g><rect x="70.0" y="140.0" width="206.0" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="173.0" y="154.6" text-anchor="middle" class="mono" font-size="10" fill="#e6edf3">CareFirst BlueCross BlueShield</text></g>
+<g><rect x="282.0" y="140.0" width="38.6" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="301.3" y="154.6" text-anchor="middle" class="mono" font-size="10" fill="#e6edf3">CSX</text></g>
+<g><rect x="70.0" y="168.0" width="82.0" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="111.0" y="182.6" text-anchor="middle" class="mono" font-size="10" fill="#e6edf3">Stellantis</text></g>
+<g><rect x="158.0" y="168.0" width="69.6" height="22" rx="11.0" fill="#00e5ff" fill-opacity=".08" stroke="#00e5ff" stroke-opacity=".55"/><text x="192.8" y="182.6" text-anchor="middle" class="mono" font-size="10" fill="#e6edf3">Intermex</text></g>
+<circle cx="48" cy="220" r="9" fill="#8b5cf6" fill-opacity=".3" class="pulse"/>
+<circle cx="48" cy="220" r="6" fill="#05070f" stroke="#8b5cf6" stroke-width="2.5"/>
+<text class="mono" x="70" y="224" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#8b5cf6">AUG 2021 — JAN 2024</text>
+<text class="sans" x="70" y="251" font-size="21" font-weight="800" fill="#e6edf3">STU Biz Solutions</text>
+<text class="mono" x="70" y="271" font-size="11.5" fill="#7d8aa5">DevOps Engineer</text>
+<g><rect x="70.0" y="282.0" width="44.8" height="22" rx="11.0" fill="#8b5cf6" fill-opacity=".08" stroke="#8b5cf6" stroke-opacity=".55"/><text x="92.4" y="296.6" text-anchor="middle" class="mono" font-size="10" fill="#e6edf3">HSBC</text></g>
+<circle cx="48" cy="334" r="6" fill="#05070f" stroke="#ff2e88" stroke-width="2.5"/>
+<text class="mono" x="70" y="338" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#ff2e88">2021</text>
+<text class="sans" x="70" y="360" font-size="14" font-weight="700" fill="#e6edf3">B.Sc. · ITM University, Gwalior</text>
+<text class="mono" x="400" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#7d8aa5">OUTCOMES // MEASURED IMPACT</text>
+<g class="tile" style="animation-delay:0.00s">
+<rect x="396.0" y="58.0" width="186.7" height="159.0" rx="12" fill="#00ff9d" fill-opacity=".05" stroke="#00ff9d" stroke-opacity=".32"/>
+<rect x="412.0" y="58.0" width="154.7" height="2.5" fill="#00ff9d" filter="url(#glow)"/>
+<text class="mono" x="412.0" y="86.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#00ff9d">◆ CAREFIRST</text>
+<text class="sans" x="410.0" y="136.0" font-size="40.0" font-weight="800" fill="url(#vg)">100%</text>
+<text class="mono" x="412.0" y="160.0" font-size="10.5" fill="#7d8aa5">Critical/High cloud</text><text class="mono" x="412.0" y="175.0" font-size="10.5" fill="#7d8aa5">findings remediated to</text><text class="mono" x="412.0" y="190.0" font-size="10.5" fill="#7d8aa5">zero</text>
+</g>
+<g class="tile" style="animation-delay:0.12s">
+<rect x="594.7" y="58.0" width="186.7" height="159.0" rx="12" fill="#00e5ff" fill-opacity=".05" stroke="#00e5ff" stroke-opacity=".32"/>
+<rect x="610.7" y="58.0" width="154.7" height="2.5" fill="#00e5ff" filter="url(#glow)"/>
+<text class="mono" x="610.7" y="86.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#00e5ff">◆ CAREFIRST</text>
+<text class="sans" x="608.7" y="136.0" font-size="40.0" font-weight="800" fill="url(#vg)">80%</text>
+<text class="mono" x="610.7" y="160.0" font-size="10.5" fill="#7d8aa5">less monthly security</text><text class="mono" x="610.7" y="175.0" font-size="10.5" fill="#7d8aa5">governance reporting</text><text class="mono" x="610.7" y="190.0" font-size="10.5" fill="#7d8aa5">effort</text>
+</g>
+<g class="tile" style="animation-delay:0.24s">
+<rect x="793.3" y="58.0" width="186.7" height="159.0" rx="12" fill="#ffb020" fill-opacity=".05" stroke="#ffb020" stroke-opacity=".32"/>
+<rect x="809.3" y="58.0" width="154.7" height="2.5" fill="#ffb020" filter="url(#glow)"/>
+<text class="mono" x="809.3" y="86.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#ffb020">◆ STELLANTIS</text>
+<text class="sans" x="807.3" y="136.0" font-size="40.0" font-weight="800" fill="url(#vg)">43%</text>
+<text class="mono" x="809.3" y="160.0" font-size="10.5" fill="#7d8aa5">cloud cost reduction via</text><text class="mono" x="809.3" y="175.0" font-size="10.5" fill="#7d8aa5">FinOps automation</text>
+</g>
+<g class="tile" style="animation-delay:0.36s">
+<rect x="396.0" y="229.0" width="186.7" height="159.0" rx="12" fill="#8b5cf6" fill-opacity=".05" stroke="#8b5cf6" stroke-opacity=".32"/>
+<rect x="412.0" y="229.0" width="154.7" height="2.5" fill="#8b5cf6" filter="url(#glow)"/>
+<text class="mono" x="412.0" y="257.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#8b5cf6">◆ STELLANTIS</text>
+<text class="sans" x="410.0" y="307.0" font-size="40.0" font-weight="800" fill="url(#vg)">67%</text>
+<text class="mono" x="412.0" y="331.0" font-size="10.5" fill="#7d8aa5">faster VEW image creation</text><text class="mono" x="412.0" y="346.0" font-size="10.5" fill="#7d8aa5">pipelines</text>
+</g>
+<g class="tile" style="animation-delay:0.48s">
+<rect x="594.7" y="229.0" width="186.7" height="159.0" rx="12" fill="#ff2e88" fill-opacity=".05" stroke="#ff2e88" stroke-opacity=".32"/>
+<rect x="610.7" y="229.0" width="154.7" height="2.5" fill="#ff2e88" filter="url(#glow)"/>
+<text class="mono" x="610.7" y="257.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#ff2e88">◆ STELLANTIS</text>
+<text class="sans" x="608.7" y="299.2" font-size="32.2" font-weight="800" fill="url(#vg)">700h→30h</text>
+<text class="mono" x="610.7" y="323.2" font-size="10.5" fill="#7d8aa5">MTTT/MTTR, leading to</text><text class="mono" x="610.7" y="338.2" font-size="10.5" fill="#7d8aa5">contract extensions</text>
+</g>
+<g class="tile" style="animation-delay:0.60s">
+<rect x="793.3" y="229.0" width="186.7" height="159.0" rx="12" fill="#00e5ff" fill-opacity=".05" stroke="#00e5ff" stroke-opacity=".32"/>
+<rect x="809.3" y="229.0" width="154.7" height="2.5" fill="#00e5ff" filter="url(#glow)"/>
+<text class="mono" x="809.3" y="257.0" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#00e5ff">◆ STELLANTIS</text>
+<text class="sans" x="807.3" y="307.0" font-size="40.0" font-weight="800" fill="url(#vg)">700+</text>
+<text class="mono" x="809.3" y="331.0" font-size="10.5" fill="#7d8aa5">incidents &amp; service</text><text class="mono" x="809.3" y="346.0" font-size="10.5" fill="#7d8aa5">requests resolved</text>
+</g>
+</svg>

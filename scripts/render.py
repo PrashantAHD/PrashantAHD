@@ -39,55 +39,91 @@ ROLES = [
     "CNAPP · Wiz · CSPM Specialist",
     "Policy-as-Code & Automation Nerd",
 ]
-YEARS = "4+"
+YEARS = "5+"
 ORGS_FALLBACK = 14  # GITHUB_TOKEN only sees public org memberships
 MOTTO = "Shift left. Secure everything. Automate the rest."
+EMAIL = "Prashant271227@gmail.com"
 
 ARSENAL = [
-    ("CLOUD PLATFORMS", "cyan", ["AWS", "Azure", "GCP", "Landing Zones", "Multi-Account", "Networking", "FinOps"]),
-    ("CLOUD SECURITY", "pink", ["Wiz · CNAPP", "CSPM", "CIEM · IAM", "Vuln Mgmt", "Defender for Cloud",
-                                "Security Hub", "GuardDuty", "Zero Trust"]),
-    ("DEVSECOPS", "green", ["GitHub Actions", "Harness", "Terraform", "Ansible", "Puppet", "Docker",
-                            "Kubernetes", "Policy-as-Code", "Secret Scanning"]),
-    ("AUTOMATION & AI", "violet", ["Python", "PowerShell", "Bash", "GitHub API", "Wiz MCP", "GitHub Copilot",
-                                   "AI Agents", "Exec Reporting"]),
+    ("CLOUD & OPS", "cyan", ["AWS", "Azure", "GCP", "CloudWatch", "Prometheus", "Grafana", "Datadog",
+                                       "CloudZero · FinOps"]),
+    ("CLOUD SECURITY", "pink", ["Wiz CSPM", "Wiz MCP", "Qualys", "Trivy", "IAM · RBAC", "Entra ID", "GuardDuty",
+                                "CloudTrail", "AWS Config", "HIPAA · HITRUST"]),
+    ("DEVSECOPS", "green", ["Jenkins", "GitHub Actions", "Azure DevOps", "ArgoCD · GitOps", "Harness", "Terraform",
+                            "Ansible", "Docker", "Kubernetes · EKS", "OpenShift", "Helm", "SonarQube", "Artifactory"]),
+    ("AUTOMATION & AI", "violet", ["Python", "PowerShell", "Bash", "Groovy", "GitHub Copilot", "Claude", "MCP Agents",
+                                   "Glean", "Atlassian Rovo", "ServiceNow"]),
+]
+
+# (issuer, level, name, verify url) — mirrors the resume's certification list
+CERTS = [
+    ("aws", "PROFESSIONAL", "DevOps Engineer – Professional",
+     "https://www.credly.com/badges/72e67681-2adc-4eff-8f31-e565b7596838/public_url"),
+    ("microsoft", "EXPERT", "Cybersecurity Architect Expert",
+     "https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/2574F2DCC705B905?sharingId=AB54B2AF1407CBA8"),
+    ("aws", "PROFESSIONAL", "Solutions Architect – Professional",
+     "https://www.credly.com/badges/410997f9-2d5d-43bb-9660-4bd38fc928b7/public_url"),
+    ("microsoft", "EXPERT", "DevOps Engineer Expert",
+     "https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/2B555C9A9A693129?sharingId=AB54B2AF1407CBA8"),
+    ("microsoft", "ASSOCIATE", "Azure Security Engineer Associate",
+     "https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/FFB769A37AB7B461?sharingId=AB54B2AF1407CBA8"),
+    ("microsoft", "ASSOCIATE", "Azure Administrator Associate",
+     "https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/1B89518218F2550A?sharingId=AB54B2AF1407CBA8"),
+    ("wiz", "CERTIFIED", "Managing Cloud Security Posture", "https://lnkd.in/drbpjnuC"),
+]
+
+# (value, label, client, color) — outcomes from the resume
+IMPACT = [
+    ("100%", "Critical/High cloud findings remediated to zero", "CareFirst", "green"),
+    ("80%", "less monthly security governance reporting effort", "CareFirst", "cyan"),
+    ("43%", "cloud cost reduction via FinOps automation", "Stellantis", "amber"),
+    ("67%", "faster VEW image creation pipelines", "Stellantis", "violet"),
+    ("700h→30h", "MTTT/MTTR, leading to contract extensions", "Stellantis", "pink"),
+    ("700+", "incidents & service requests resolved", "Stellantis", "cyan"),
+]
+CAREER = [
+    ("JAN 2024 — PRESENT", "AHEAD", "DevOps & Cloud Security Engineer",
+     ["CareFirst BlueCross BlueShield", "CSX", "Stellantis", "Intermex"]),
+    ("AUG 2021 — JAN 2024", "STU Biz Solutions", "DevOps Engineer", ["HSBC"]),
 ]
 
 PROJECTS = [
-    dict(repo="Cloud-Security-Remediations", public=True, file="project-remediations",
+    dict(repo="Cloud-Security-Remediations", public=True, file="project-remediations", client="CareFirst",
          tagline="From Wiz findings to informed action.",
-         desc="Evidence-led investigation of Wiz issues across AWS & Azure through Wiz MCP: "
-              "risk explanations, stakeholder reports and approval-gated remediation with verified closure.",
+         desc="AI-assisted remediation via Wiz MCP across AWS & Azure: evidence-backed risk analysis, "
+              "stakeholder reports and approval-gated, ServiceNow-governed changes with verified closure.",
          tags=["Wiz MCP", "AWS", "Azure", "AI-assisted"]),
-    dict(repo="wiz-reporting", public=False, file="project-wiz-reporting",
+    dict(repo="wiz-reporting", public=False, file="project-wiz-reporting", client="CareFirst",
          tagline="Cloud security governance, automated.",
-         desc="Turns Wiz exports into governance workbooks and template-driven executive PowerPoint "
-              "dashboards: severity, backlog and resolution trends with monthly rollover.",
-         tags=["Wiz", "Governance", "Excel", "PowerPoint"]),
-    dict(repo="Azure-Storage-Analysis", public=True, file="project-azure-finops",
+         desc="Turns Wiz exports into monthly governance workbooks and executive PowerPoint dashboards "
+              "with baseline carry-forward and SHA-256 provenance, cutting reporting effort by 80%.",
+         tags=["Wiz", "Governance", "-80% effort"]),
+    dict(repo="Azure-Storage-Analysis", public=True, file="project-azure-finops", client="CSX",
          tagline="Azure storage cost intelligence (FinOps).",
          desc="Single-command analysis across subscriptions: savings opportunities, 8-sheet "
               "executive Excel reports and a live web dashboard.",
          tags=["Azure", "FinOps", "Dashboards"]),
-    dict(repo="github_access_tool", public=True, file="project-github-access",
+    dict(repo="github_access_tool", public=True, file="project-github-access", client="CSX",
          tagline="GitHub org access ops, zero dependencies.",
          desc="Bulk team membership, repo permissions, Actions secret access and Copilot cloud-agent "
-              "enablement, with confirmations and per-repo results.",
+              "enablement, significantly cutting manual access-request effort.",
          tags=["GitHub API", "IAM", "Automation"]),
 ]
 
 SECTIONS = [
     ("01", "WHOAMI", "// identity verified"),
-    ("02", "THE INFINITE LOOP", "// security at every stage"),
-    ("03", "ARSENAL", "// tools of the trade"),
-    ("04", "OPERATIONS", "// featured projects"),
-    ("05", "TELEMETRY", "// live from the GitHub API"),
-    ("06", "ESTABLISH CONNECTION", "// let's build something secure"),
+    ("02", "CREDENTIALS", "// 7 certifications · click to verify"),
+    ("03", "IMPACT", "// field record"),
+    ("04", "THE INFINITE LOOP", "// security at every stage"),
+    ("05", "ARSENAL", "// tools of the trade"),
+    ("06", "OPERATIONS", "// featured projects"),
+    ("07", "TELEMETRY", "// live from the GitHub API"),
+    ("08", "ESTABLISH CONNECTION", "// let's build something secure"),
 ]
 
 # --------------------------------------------------------------------------- theme
 C = dict(bg="#05070f", bg2="#0b1226", cyan="#00e5ff", green="#00ff9d", violet="#8b5cf6",
-         pink="#ff2e88", amber="#ffb020", aws="#ff9900", ms="#00a4ef", text="#e6edf3", muted="#7d8aa5",
+         pink="#ff2e88", amber="#ffb020", aws="#ff9900", ms="#00a4ef", wiz="#5b8cff", text="#e6edf3", muted="#7d8aa5",
          dim="#3a4660", line="#14304a")
 MONO = "'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
 SANS = "'Segoe UI','Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif"
@@ -337,14 +373,18 @@ def render_terminal() -> str:
         ("cmd", [("cat ", V), ("~/.config/profile.yaml", c["cyan"])]),
         ("out", [("role:       ", K), ('"Cloud Security · DevSecOps · Platform Engineering"', S)]),
         ("out", [("location:   ", K), ('"Gurgaon, Haryana, India"', S)]),
-        ("out", [("experience: ", K), (f'"{YEARS} years building & securing scalable cloud platforms"', S)]),
+        ("out", [("experience: ", K), (f'"{YEARS} years securing & scaling Fortune 500 cloud platforms"', S)]),
+        ("out", [("clients:    ", K), ("[carefirst, csx, stellantis, intermex, hsbc]", c["cyan"])]),
         ("out", [("certified:", K)]),
-        ("out", [("  - ", c["muted"]), ('"AWS Certified DevOps Engineer – Professional"', A)]),
         ("out", [("  - ", c["muted"]), ('"Microsoft Certified: Cybersecurity Architect Expert"', c["ms"])]),
+        ("out", [("  - ", c["muted"]), ('"AWS Certified DevOps Engineer – Professional"', A)]),
+        ("out", [("  - ", c["muted"]), ('"+5 more: AWS SA Pro · Azure DevOps Expert · Azure Security · Azure Admin · Wiz"',
+                                         c["muted"])]),
         ("out", [("clouds:     ", K), ("[aws, azure, gcp]", c["cyan"])]),
         ("out", [("focus:      ", K), ("[cnapp, cspm, iam, shift-left, policy-as-code, finops]", c["cyan"])]),
         ("out", [("now:        ", K), ('"Wiz findings → evidence → approval-gated remediation"', S)]),
         ("out", [("motto:      ", K), (f'"{MOTTO}"', c["pink"])]),
+        ("out", [("contact:    ", K), (f'"{EMAIL}"', c["cyan"])]),
         ("cmd", [("./posture-check ", V), ("--env prod --strict", c["muted"])]),
         ("out", [("[ PASS ]", S), (" least-privilege IAM         ", V), ("[ PASS ]", S), (" secrets vaulted & rotated", V)]),
         ("out", [("[ PASS ]", S), (" IaC policy gates            ", V), ("[ PASS ]", S), (" supply chain pinned & signed", V)]),
@@ -557,6 +597,12 @@ def render_project(p: dict, live: dict) -> str:
     b.append(f'<rect x="22" y="20" width="{bw:.0f}" height="22" rx="11" fill="{ac}" fill-opacity=".1" stroke="{ac}" stroke-opacity=".5"/>'
              f'<text class="mono" x="{22 + bw / 2:.0f}" y="35" text-anchor="middle" font-size="10" font-weight="700" '
              f'letter-spacing="1" fill="{ac}">{badge}</text>')
+    if p.get("client"):
+        cl = f"CLIENT · {p['client'].upper()}"
+        cw = len(cl) * 10 * CW + 20
+        b.append(f'<rect x="{30 + bw:.0f}" y="20" width="{cw:.0f}" height="22" rx="11" fill="{C["violet"]}" fill-opacity=".12" '
+                 f'stroke="{C["violet"]}" stroke-opacity=".6"/><text class="mono" x="{30 + bw + cw / 2:.0f}" y="35" '
+                 f'text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="{C["violet"]}">{esc(cl)}</text>')
     meta = f'<tspan fill="{lcol}">●</tspan> {esc(lang)}'
     if p["public"] and info.get("stars"):
         meta += f'   <tspan fill="{C["amber"]}">★</tspan> {info.get("stars", 0)}'
@@ -618,20 +664,14 @@ def render_button(kind: str) -> str:
                 f'<text class="mono" x="26" y="27.5" text-anchor="middle" font-size="10.5" font-weight="800" fill="{C["text"]}">&lt;/&gt;</text>')
         label = f'<text class="mono" x="50" y="28" font-size="12.5" font-weight="700" letter-spacing="1.6" fill="{C["text"]}">EXPLORE REPOS</text>'
         title = "Explore repositories"
-    elif kind == "microsoft":
-        W, accent = 312, "ms"
-        sq = [("#f25022", 0, 0), ("#7fba00", 12, 0), ("#00a4ef", 0, 12), ("#ffb900", 12, 12)]
-        icon = "".join(f'<rect x="{15 + dx}" y="{11 + dy}" width="11" height="11" fill="{col}"/>' for col, dx, dy in sq)
-        label = (f'<text class="mono" x="50" y="19" font-size="9.5" font-weight="700" letter-spacing="2" fill="{C["ms"]}">MICROSOFT CERTIFIED</text>'
-                 f'<text class="sans" x="50" y="35" font-size="13.5" font-weight="700" fill="{C["text"]}">Cybersecurity Architect Expert</text>')
-        title = "Microsoft Certified: Cybersecurity Architect Expert"
+    elif kind == "email":
+        W, accent = 330, "green"
+        icon = (f'<rect x="14" y="12" width="24" height="18" rx="3" fill="{C["green"]}" fill-opacity=".15" stroke="{C["green"]}" stroke-width="1.5"/>'
+                f'<path d="M15 13 L26 23 L37 13" stroke="{C["green"]}" stroke-width="1.5" fill="none"/>')
+        label = f'<text class="mono" x="50" y="28" font-size="12.5" font-weight="700" letter-spacing=".6" fill="{C["text"]}">{esc(EMAIL)}</text>'
+        title = f"Email {EMAIL}"
     else:
-        W, accent = 330, "amber"
-        icon = (f'<path d="M26 9 L37 15.5 V28.5 L26 35 L15 28.5 V15.5 Z" fill="{C["aws"]}" fill-opacity=".15" stroke="{C["aws"]}" stroke-width="1.6"/>'
-                f'<text class="sans" x="26" y="26" text-anchor="middle" font-size="8" font-weight="800" fill="{C["aws"]}">AWS</text>')
-        label = (f'<text class="mono" x="50" y="19" font-size="9.5" font-weight="700" letter-spacing="2" fill="{C["aws"]}">AWS CERTIFIED</text>'
-                 f'<text class="sans" x="50" y="35" font-size="13.5" font-weight="700" fill="{C["text"]}">DevOps Engineer – Professional</text>')
-        title = "AWS Certified DevOps Engineer – Professional"
+        raise ValueError(kind)
     H = 46
     b = [frame(W, H, 23, accent), f'''<defs><linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>
 <stop offset=".5" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
@@ -639,6 +679,116 @@ def render_button(kind: str) -> str:
 <g clip-path="url(#bc)"><rect class="shine" x="0" y="0" width="60" height="{H}" fill="url(#sh)" transform="skewX(-20)"/></g>
 {icon}{label}''']
     return svg(W, H, "\n".join(b), title, style)
+
+
+# --------------------------------------------------------------------------- certifications
+ISSUERS = {
+    "aws": ("AWS CERTIFIED", "amber", C["aws"]),
+    "microsoft": ("MICROSOFT CERTIFIED", "ms", C["ms"]),
+    "wiz": ("WIZ CERTIFIED", "violet", C["wiz"]),
+}
+
+
+def issuer_logo(issuer: str, cx: float, cy: float) -> str:
+    if issuer == "aws":
+        pts = " ".join(f"{cx + 22 * math.cos(math.radians(a)):.1f},{cy + 22 * math.sin(math.radians(a)):.1f}"
+                       for a in range(30, 390, 60))
+        return (f'<polygon points="{pts}" fill="{C["aws"]}" fill-opacity=".14" stroke="{C["aws"]}" stroke-width="2"/>'
+                f'<text class="sans" x="{cx}" y="{cy + 4.5}" text-anchor="middle" font-size="12.5" font-weight="800" fill="{C["aws"]}">AWS</text>')
+    if issuer == "microsoft":
+        sq = [("#f25022", -1, -1), ("#7fba00", 1, -1), ("#00a4ef", -1, 1), ("#ffb900", 1, 1)]
+        return "".join(f'<rect x="{cx + (dx - 1) * 10.5 + (1 if dx > 0 else 0):.1f}" y="{cy + (dy - 1) * 10.5 + (1 if dy > 0 else 0):.1f}" '
+                       f'width="19.5" height="19.5" fill="{col}"/>' for col, dx, dy in sq)
+    return (f'<circle cx="{cx}" cy="{cy}" r="21" fill="{C["wiz"]}" fill-opacity=".16" stroke="{C["wiz"]}" stroke-width="2"/>'
+            f'<text class="sans" x="{cx}" y="{cy + 5.5}" text-anchor="middle" font-size="15" font-weight="800" fill="{C["wiz"]}">wiz</text>')
+
+
+def render_cert(issuer: str, level: str, name: str) -> str:
+    W, H = 490, 104
+    head, accent, col = ISSUERS[issuer]
+    style = """
+.comet{animation:comet 6s linear infinite}
+@keyframes comet{to{stroke-dashoffset:-100}}
+.seal{animation:seal 12s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes seal{to{transform:rotate(360deg)}}
+"""
+    lw = len(level) * 9.5 * CW + 18
+    sx, sy = W - 52, 42
+    b = [frame(W, H, 14, accent), f'''<rect class="comet" x="1" y="1" width="{W - 2}" height="{H - 2}" rx="13" pathLength="100"
+ stroke="{col}" stroke-width="2" stroke-dasharray="8 92" filter="url(#glow)"/>
+{issuer_logo(issuer, 46, 50)}
+<text class="mono" x="86" y="34" font-size="10" font-weight="700" letter-spacing="2" fill="{col}">{head}</text>
+<text class="sans" x="86" y="60" font-size="17" font-weight="800" fill="{C["text"]}">{esc(name)}</text>
+<rect x="86" y="70" width="{lw:.0f}" height="20" rx="10" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".55"/>
+<text class="mono" x="{86 + lw / 2:.0f}" y="84" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="1.2" fill="{col}">{level}</text>
+<circle class="seal" cx="{sx}" cy="{sy}" r="22" stroke="{col}" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="{sx}" cy="{sy}" r="15" fill="{col}" fill-opacity=".15" stroke="{col}"/>
+<path d="M{sx - 7} {sy} l5 5 l9 -10" stroke="{C["green"]}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text class="mono" x="{sx}" y="{H - 16}" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{col}">VERIFY ↗</text>''']
+    return svg(W, H, "\n".join(b), f"{head.title()}: {name}", style)
+
+
+# --------------------------------------------------------------------------- impact
+def render_impact() -> str:
+    W, H = 1000, 396
+    style = """
+.tile{animation:tup .7s ease-out both}
+@keyframes tup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.3}}
+.flow{stroke-dasharray:3 9;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-12}}
+"""
+    b = [frame(W, H, 16), f'''<defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/>
+<stop offset="1" stop-color="{C["cyan"]}"/></linearGradient>
+<linearGradient id="tl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{C["cyan"]}"/><stop offset=".6" stop-color="{C["violet"]}"/>
+<stop offset="1" stop-color="{C["pink"]}" stop-opacity=".3"/></linearGradient></defs>''']
+
+    # mission log (career timeline)
+    lx, lw = 20, 360
+    b.append(f'''<rect x="{lx}" y="18" width="{lw}" height="{H - 36}" rx="12" fill="#ffffff" fill-opacity=".02" stroke="{C["line"]}"/>
+<text class="mono" x="{lx + 18}" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["muted"]}">MISSION LOG // CAREER</text>
+<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{H - 46}" stroke="url(#tl)" stroke-width="2"/>
+<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{H - 46}" stroke="#fff" stroke-opacity=".6" stroke-width="2" class="flow"/>''')
+    y = 82
+    for k, (when, org, role, clients) in enumerate(CAREER):
+        col = C["cyan"] if k == 0 else C["violet"]
+        b.append(f'''<circle cx="{lx + 28}" cy="{y - 4}" r="9" fill="{col}" fill-opacity=".3" class="pulse"/>
+<circle cx="{lx + 28}" cy="{y - 4}" r="6" fill="{C["bg"]}" stroke="{col}" stroke-width="2.5"/>
+<text class="mono" x="{lx + 50}" y="{y}" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{col}">{when}</text>
+<text class="sans" x="{lx + 50}" y="{y + 27}" font-size="21" font-weight="800" fill="{C["text"]}">{esc(org)}</text>
+<text class="mono" x="{lx + 50}" y="{y + 47}" font-size="11.5" fill="{C["muted"]}">{esc(role)}</text>''')
+        cx, cy = lx + 50, y + 58
+        for cl in clients:
+            w = len(cl) * 10 * CW + 20
+            if cx + w > lx + lw - 14:
+                cx, cy = lx + 50, cy + 28
+            el, w = chip(cx, cy, cl, col, 10, 22)
+            b.append(el)
+            cx += w + 6
+        y = cy + 56
+    b.append(f'''<circle cx="{lx + 28}" cy="{y - 4}" r="6" fill="{C["bg"]}" stroke="{C["pink"]}" stroke-width="2.5"/>
+<text class="mono" x="{lx + 50}" y="{y}" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["pink"]}">2021</text>
+<text class="sans" x="{lx + 50}" y="{y + 22}" font-size="14" font-weight="700" fill="{C["text"]}">B.Sc. · ITM University, Gwalior</text>''')
+
+    # outcomes grid
+    gx, gw, gap = 396, W - 396 - 20, 12
+    tw, th = (gw - 2 * gap) / 3, (H - 36 - 30 - gap) / 2
+    b.append(f'<text class="mono" x="{gx + 4}" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["muted"]}">'
+             f'OUTCOMES // MEASURED IMPACT</text>')
+    for i, (val, label, client, col) in enumerate(IMPACT):
+        x, y = gx + (i % 3) * (tw + gap), 58 + (i // 3) * (th + gap)
+        colr = C[col]
+        fs = min(40, (tw - 32) / (len(val) * .6))
+        lines = textwrap.wrap(label, 26)
+        b.append(f'''<g class="tile" style="animation-delay:{i * .12:.2f}s">
+<rect x="{x:.1f}" y="{y:.1f}" width="{tw:.1f}" height="{th:.1f}" rx="12" fill="{colr}" fill-opacity=".05" stroke="{colr}" stroke-opacity=".32"/>
+<rect x="{x + 16:.1f}" y="{y:.1f}" width="{tw - 32:.1f}" height="2.5" fill="{colr}" filter="url(#glow)"/>
+<text class="mono" x="{x + 16:.1f}" y="{y + 28:.1f}" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="{colr}">◆ {esc(client.upper())}</text>
+<text class="sans" x="{x + 14:.1f}" y="{y + 28 + fs + 10:.1f}" font-size="{fs:.1f}" font-weight="800" fill="url(#vg)">{esc(val)}</text>
+{"".join(f'<text class="mono" x="{x + 16:.1f}" y="{y + 28 + fs + 34 + j * 15:.1f}" font-size="10.5" fill="{C["muted"]}">{esc(t)}</text>' for j, t in enumerate(lines))}
+</g>''')
+    return svg(W, H, "\n".join(b), "Impact: career timeline and measured outcomes", style)
 
 
 # --------------------------------------------------------------------------- footer
@@ -672,7 +822,7 @@ def render_footer() -> str:
 <text class="mono" x="130" y="{y + 5}" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="3" fill="{C["green"]}">YOU</text>
 <rect x="{Rx}" y="{y - 23}" width="150" height="46" rx="10" fill="{C["violet"]}" fill-opacity=".08" stroke="{C["violet"]}" stroke-opacity=".7"/>
 <text class="mono" x="{Rx + 75}" y="{y + 5}" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="3" fill="{C["violet"]}">PRASHANT</text>
-<text class="mono ok" x="{W / 2}" y="{y + 40}" text-anchor="middle" font-size="12" fill="{C["green"]}">✔ handshake complete · channel secured · say hi on LinkedIn</text>
+<text class="mono ok" x="{W / 2}" y="{y + 40}" text-anchor="middle" font-size="12" fill="{C["green"]}">✔ handshake complete · channel secured · {esc(EMAIL)}</text>
 <text class="sans" x="{W / 2}" y="{H - 26}" text-anchor="middle" font-size="19" font-weight="700" font-style="italic" fill="url(#mg)">{esc(MOTTO)}</text>''']
     return svg(W, H, "\n".join(b), "Establish a secure connection with Prashant", style)
 
@@ -861,8 +1011,11 @@ def main() -> int:
     write("devsecops-loop.svg", render_loop())
     write("arsenal.svg", render_arsenal())
     write("footer.svg", render_footer())
-    for kind in ("linkedin", "github", "aws", "microsoft"):
+    write("impact.svg", render_impact())
+    for kind in ("linkedin", "github", "email"):
         write(f"btn-{kind}.svg", render_button(kind))
+    for i, (issuer, level, name, _url) in enumerate(CERTS, 1):
+        write(f"cert-{i:02d}.svg", render_cert(issuer, level, name))
     for i, (num, title, sub) in enumerate(SECTIONS, 1):
         write(f"section-{i:02d}.svg", render_section(num, title, sub))
 

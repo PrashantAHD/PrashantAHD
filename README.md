@@ -6,51 +6,74 @@
   <a href="https://www.linkedin.com/in/iprashantkr"><img src="./assets/btn-linkedin.svg" height="46" alt="Connect on LinkedIn"/></a>
   &nbsp;
   <a href="https://github.com/PrashantAHD?tab=repositories"><img src="./assets/btn-github.svg" height="46" alt="Explore repositories"/></a>
-</p>
-<p align="center">
-  <img src="./assets/btn-aws.svg" height="46" alt="AWS Certified DevOps Engineer – Professional"/>
   &nbsp;
-  <img src="./assets/btn-microsoft.svg" height="46" alt="Microsoft Certified: Cybersecurity Architect Expert"/>
+  <a href="mailto:Prashant271227@gmail.com"><img src="./assets/btn-email.svg" height="46" alt="Email Prashant271227@gmail.com"/></a>
 </p>
 
 <br/>
 
 <img src="./assets/section-01.svg" width="100%" alt="01 Whoami"/>
 
-<img src="./assets/terminal.svg" width="100%" alt="whoami: Prashant Kumar, Cloud Security &amp; DevSecOps Engineer at AHEAD, Gurgaon. 4+ years building and securing scalable cloud platforms. AWS Certified DevOps Engineer – Professional. Microsoft Certified: Cybersecurity Architect Expert. Focus: CNAPP, CSPM, IAM, shift-left, policy-as-code, FinOps."/>
+<img src="./assets/terminal.svg" width="100%" alt="whoami: Prashant Kumar, Cloud Security &amp; DevSecOps Engineer at AHEAD, Gurgaon. 5+ years securing and scaling Fortune 500 cloud platforms for CareFirst, CSX, Stellantis, Intermex and HSBC. Microsoft Certified: Cybersecurity Architect Expert; AWS Certified DevOps Engineer – Professional; plus 5 more certifications. Contact: Prashant271227@gmail.com."/>
 
 <br/>
 
-<img src="./assets/section-02.svg" width="100%" alt="02 The infinite loop"/>
+<img src="./assets/section-02.svg" width="100%" alt="02 Credentials"/>
+
+<p align="center">
+  <a href="https://www.credly.com/badges/72e67681-2adc-4eff-8f31-e565b7596838/public_url"><img src="./assets/cert-01.svg" width="49%" alt="AWS Certified DevOps Engineer – Professional (verify)"/></a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/2574F2DCC705B905?sharingId=AB54B2AF1407CBA8"><img src="./assets/cert-02.svg" width="49%" alt="Microsoft Certified: Cybersecurity Architect Expert (verify)"/></a>
+</p>
+<p align="center">
+  <a href="https://www.credly.com/badges/410997f9-2d5d-43bb-9660-4bd38fc928b7/public_url"><img src="./assets/cert-03.svg" width="49%" alt="AWS Certified Solutions Architect – Professional (verify)"/></a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/2B555C9A9A693129?sharingId=AB54B2AF1407CBA8"><img src="./assets/cert-04.svg" width="49%" alt="Microsoft Certified: DevOps Engineer Expert (verify)"/></a>
+</p>
+<p align="center">
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/FFB769A37AB7B461?sharingId=AB54B2AF1407CBA8"><img src="./assets/cert-05.svg" width="49%" alt="Microsoft Certified: Azure Security Engineer Associate (verify)"/></a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/iPrashantkr/1B89518218F2550A?sharingId=AB54B2AF1407CBA8"><img src="./assets/cert-06.svg" width="49%" alt="Microsoft Certified: Azure Administrator Associate (verify)"/></a>
+</p>
+<p align="center">
+  <a href="https://lnkd.in/drbpjnuC"><img src="./assets/cert-07.svg" width="49%" alt="Wiz: Managing Cloud Security Posture (verify)"/></a>
+</p>
+
+<br/>
+
+<img src="./assets/section-03.svg" width="100%" alt="03 Impact"/>
+
+<img src="./assets/impact.svg" width="100%" alt="Career: AHEAD (Jan 2024 to present) for CareFirst BlueCross BlueShield, CSX, Stellantis and Intermex; STU Biz Solutions (Aug 2021 to Jan 2024) for HSBC. Outcomes: 100% of Critical/High cloud findings remediated to zero (CareFirst); 80% less monthly governance reporting effort (CareFirst); 43% cloud cost reduction, 67% faster image pipelines, MTTT/MTTR from 700h to 30h, and 700+ incidents resolved (Stellantis)."/>
+
+<br/>
+
+<img src="./assets/section-04.svg" width="100%" alt="04 The infinite loop"/>
 
 <img src="./assets/devsecops-loop.svg" width="100%" alt="DevSecOps loop: Plan (threat modeling), Code (SAST, secrets), Build (SCA, SBOM), Test (DAST, IaC scan), Release (sign, attest), Deploy (policy-as-code), Operate (CSPM, CNAPP), Monitor (SIEM, detection)."/>
 
 <br/>
 
-<img src="./assets/section-03.svg" width="100%" alt="03 Arsenal"/>
+<img src="./assets/section-05.svg" width="100%" alt="05 Arsenal"/>
 
-<img src="./assets/arsenal.svg" width="100%" alt="Cloud platforms, cloud security, DevSecOps and automation tooling"/>
+<img src="./assets/arsenal.svg" width="100%" alt="Cloud and observability, cloud security, DevSecOps, and automation and AI tooling"/>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,terraform,ansible,docker,kubernetes,githubactions,python,powershell,bash,linux,git,vscode&theme=dark&perline=14" alt="AWS, Azure, GCP, Terraform, Ansible, Docker, Kubernetes, GitHub Actions, Python, PowerShell, Bash, Linux, Git, VS Code"/>
+  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,terraform,ansible,docker,kubernetes,jenkins,githubactions,prometheus,grafana,python,powershell,bash,linux,git&amp;theme=dark&amp;perline=16" alt="AWS, Azure, GCP, Terraform, Ansible, Docker, Kubernetes, Jenkins, GitHub Actions, Prometheus, Grafana, Python, PowerShell, Bash, Linux, Git"/>
 </p>
 
 <br/>
 
-<img src="./assets/section-04.svg" width="100%" alt="04 Operations"/>
+<img src="./assets/section-06.svg" width="100%" alt="06 Operations"/>
 
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Cloud-Security-Remediations"><img src="./assets/project-remediations.svg" width="49%" alt="Cloud-Security-Remediations"/></a>
-  <img src="./assets/project-wiz-reporting.svg" width="49%" alt="wiz-reporting (private)"/>
+  <a href="https://github.com/PrashantAHD/Cloud-Security-Remediations"><img src="./assets/project-remediations.svg" width="49%" alt="Cloud-Security-Remediations (CareFirst)"/></a>
+  <img src="./assets/project-wiz-reporting.svg" width="49%" alt="wiz-reporting (private, CareFirst)"/>
 </p>
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Azure-Storage-Analysis"><img src="./assets/project-azure-finops.svg" width="49%" alt="Azure-Storage-Analysis"/></a>
-  <a href="https://github.com/PrashantAHD/github_access_tool"><img src="./assets/project-github-access.svg" width="49%" alt="github_access_tool"/></a>
+  <a href="https://github.com/PrashantAHD/Azure-Storage-Analysis"><img src="./assets/project-azure-finops.svg" width="49%" alt="Azure-Storage-Analysis (CSX)"/></a>
+  <a href="https://github.com/PrashantAHD/github_access_tool"><img src="./assets/project-github-access.svg" width="49%" alt="github_access_tool (CSX)"/></a>
 </p>
 
 <br/>
 
-<img src="./assets/section-05.svg" width="100%" alt="05 Telemetry"/>
+<img src="./assets/section-07.svg" width="100%" alt="07 Telemetry"/>
 
 <img src="./assets/telemetry.svg" width="100%" alt="Live GitHub telemetry: contributions, commits, active days, organizations and language mix"/>
 
@@ -62,9 +85,9 @@
 
 <br/>
 
-<img src="./assets/section-06.svg" width="100%" alt="06 Establish connection"/>
+<img src="./assets/section-08.svg" width="100%" alt="08 Establish connection"/>
 
-<a href="https://www.linkedin.com/in/iprashantkr"><img src="./assets/footer.svg" width="100%" alt="Establish a secure connection: say hi on LinkedIn. Shift left. Secure everything. Automate the rest."/></a>
+<a href="mailto:Prashant271227@gmail.com"><img src="./assets/footer.svg" width="100%" alt="Establish a secure connection: Prashant271227@gmail.com. Shift left. Secure everything. Automate the rest."/></a>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=PrashantAHD&amp;style=flat-square&amp;color=00e5ff&amp;label=PROFILE+VIEWS" alt="Profile views"/>
