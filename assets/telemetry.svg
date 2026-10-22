@@ -45,18 +45,18 @@
 <rect x="734" y="19" width="58" height="22" rx="11" fill="#00ff9d" fill-opacity=".12" stroke="#00ff9d" stroke-opacity=".6"/>
 <circle cx="748" cy="30" r="3.5" fill="#00ff9d" class="blink"/>
 <text class="mono" x="757" y="34" font-size="10.5" font-weight="700" fill="#00ff9d">LIVE</text>
-<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-22 20:55 UTC</text>
+<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-22 20:56 UTC</text>
 <g class="tile" style="animation-delay:0.00s">
 <rect x="20.0" y="56" width="182.4" height="94" rx="12" fill="#00e5ff" fill-opacity=".05" stroke="#00e5ff" stroke-opacity=".3"/>
 <rect x="20.0" y="74" width="3" height="58" rx="1.5" fill="#00e5ff" filter="url(#glow)"/>
 <text class="mono" x="38.0" y="80" font-size="10" font-weight="700" letter-spacing="1.6" fill="#00e5ff">CONTRIBUTIONS</text>
-<text class="sans" x="36.0" y="120" font-size="34" font-weight="800" fill="url(#num)">44</text>
+<text class="sans" x="36.0" y="120" font-size="34" font-weight="800" fill="url(#num)">33</text>
 <text class="mono" x="38.0" y="138" font-size="9.5" fill="#7d8aa5">last 12 months</text></g>
 <g class="tile" style="animation-delay:0.12s">
 <rect x="214.4" y="56" width="182.4" height="94" rx="12" fill="#00ff9d" fill-opacity=".05" stroke="#00ff9d" stroke-opacity=".3"/>
 <rect x="214.4" y="74" width="3" height="58" rx="1.5" fill="#00ff9d" filter="url(#glow)"/>
 <text class="mono" x="232.4" y="80" font-size="10" font-weight="700" letter-spacing="1.6" fill="#00ff9d">COMMITS</text>
-<text class="sans" x="230.4" y="120" font-size="34" font-weight="800" fill="url(#num)">41</text>
+<text class="sans" x="230.4" y="120" font-size="34" font-weight="800" fill="url(#num)">30</text>
 <text class="mono" x="232.4" y="138" font-size="9.5" fill="#7d8aa5">last 12 months</text></g>
 <g class="tile" style="animation-delay:0.24s">
 <rect x="408.8" y="56" width="182.4" height="94" rx="12" fill="#8b5cf6" fill-opacity=".05" stroke="#8b5cf6" stroke-opacity=".3"/>
@@ -80,8 +80,8 @@
 <text class="mono" x="38" y="188" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#7d8aa5">WEEKLY ACTIVITY // LAST 52 WEEKS</text>
 <text class="mono" x="602" y="188" text-anchor="end" font-size="10.5" fill="#00e5ff">peak 14 / week</text>
 <line x1="38" x2="602" y1="206.0" y2="206.0" stroke="#14304a" stroke-dasharray="2 4"/><line x1="38" x2="602" y1="252.0" y2="252.0" stroke="#14304a" stroke-dasharray="2 4"/><line x1="38" x2="602" y1="298.0" y2="298.0" stroke="#14304a" stroke-dasharray="2 4"/>
-<path class="area" d="M38.0 298.0 L49.1 298.0 L60.1 298.0 L71.2 298.0 L82.2 298.0 L93.3 298.0 L104.4 298.0 L115.4 298.0 L126.5 298.0 L137.5 298.0 L148.6 298.0 L159.6 298.0 L170.7 298.0 L181.8 298.0 L192.8 298.0 L203.9 298.0 L214.9 298.0 L226.0 298.0 L237.1 298.0 L248.1 298.0 L259.2 298.0 L270.2 298.0 L281.3 298.0 L292.4 298.0 L303.4 298.0 L314.5 298.0 L325.5 298.0 L336.6 298.0 L347.6 298.0 L358.7 298.0 L369.8 298.0 L380.8 298.0 L391.9 298.0 L402.9 298.0 L414.0 206.0 L425.1 298.0 L436.1 298.0 L447.2 298.0 L458.2 298.0 L469.3 298.0 L480.4 298.0 L491.4 298.0 L502.5 298.0 L513.5 298.0 L524.6 298.0 L535.6 298.0 L546.7 298.0 L557.8 265.1 L568.8 238.9 L579.9 278.3 L590.9 291.4 L602.0 219.1 L602 298 L38 298 Z" fill="url(#ar)"/>
-<path class="draw" d="M38.0 298.0 L49.1 298.0 L60.1 298.0 L71.2 298.0 L82.2 298.0 L93.3 298.0 L104.4 298.0 L115.4 298.0 L126.5 298.0 L137.5 298.0 L148.6 298.0 L159.6 298.0 L170.7 298.0 L181.8 298.0 L192.8 298.0 L203.9 298.0 L214.9 298.0 L226.0 298.0 L237.1 298.0 L248.1 298.0 L259.2 298.0 L270.2 298.0 L281.3 298.0 L292.4 298.0 L303.4 298.0 L314.5 298.0 L325.5 298.0 L336.6 298.0 L347.6 298.0 L358.7 298.0 L369.8 298.0 L380.8 298.0 L391.9 298.0 L402.9 298.0 L414.0 206.0 L425.1 298.0 L436.1 298.0 L447.2 298.0 L458.2 298.0 L469.3 298.0 L480.4 298.0 L491.4 298.0 L502.5 298.0 L513.5 298.0 L524.6 298.0 L535.6 298.0 L546.7 298.0 L557.8 265.1 L568.8 238.9 L579.9 278.3 L590.9 291.4 L602.0 219.1" pathLength="1" stroke="url(#ln)" stroke-width="2.4" stroke-linejoin="round" filter="url(#glow)"/>
+<path class="area" d="M38.0 298.0 L49.1 298.0 L60.1 298.0 L71.2 298.0 L82.2 298.0 L93.3 298.0 L104.4 298.0 L115.4 298.0 L126.5 298.0 L137.5 298.0 L148.6 298.0 L159.6 298.0 L170.7 298.0 L181.8 298.0 L192.8 298.0 L203.9 298.0 L214.9 298.0 L226.0 298.0 L237.1 298.0 L248.1 298.0 L259.2 298.0 L270.2 298.0 L281.3 298.0 L292.4 298.0 L303.4 298.0 L314.5 298.0 L325.5 298.0 L336.6 298.0 L347.6 298.0 L358.7 298.0 L369.8 298.0 L380.8 298.0 L391.9 298.0 L402.9 298.0 L414.0 206.0 L425.1 298.0 L436.1 298.0 L447.2 298.0 L458.2 298.0 L469.3 298.0 L480.4 298.0 L491.4 298.0 L502.5 298.0 L513.5 298.0 L524.6 298.0 L535.6 298.0 L546.7 298.0 L557.8 265.1 L568.8 238.9 L579.9 278.3 L590.9 291.4 L602.0 291.4 L602 298 L38 298 Z" fill="url(#ar)"/>
+<path class="draw" d="M38.0 298.0 L49.1 298.0 L60.1 298.0 L71.2 298.0 L82.2 298.0 L93.3 298.0 L104.4 298.0 L115.4 298.0 L126.5 298.0 L137.5 298.0 L148.6 298.0 L159.6 298.0 L170.7 298.0 L181.8 298.0 L192.8 298.0 L203.9 298.0 L214.9 298.0 L226.0 298.0 L237.1 298.0 L248.1 298.0 L259.2 298.0 L270.2 298.0 L281.3 298.0 L292.4 298.0 L303.4 298.0 L314.5 298.0 L325.5 298.0 L336.6 298.0 L347.6 298.0 L358.7 298.0 L369.8 298.0 L380.8 298.0 L391.9 298.0 L402.9 298.0 L414.0 206.0 L425.1 298.0 L436.1 298.0 L447.2 298.0 L458.2 298.0 L469.3 298.0 L480.4 298.0 L491.4 298.0 L502.5 298.0 L513.5 298.0 L524.6 298.0 L535.6 298.0 L546.7 298.0 L557.8 265.1 L568.8 238.9 L579.9 278.3 L590.9 291.4 L602.0 291.4" pathLength="1" stroke="url(#ln)" stroke-width="2.4" stroke-linejoin="round" filter="url(#glow)"/>
 <circle class="area" cx="414.0" cy="206.0" r="4" fill="#05070f" stroke="#00e5ff" stroke-width="2"/>
 <rect class="scanx" x="-2" y="206" width="40" height="92" fill="url(#sx)"/>
 <rect x="632" y="164" width="348" height="150" rx="12" fill="#ffffff" fill-opacity=".02" stroke="#14304a"/>
