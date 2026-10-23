@@ -40,7 +40,7 @@
 
 <img src="./assets/section-03.svg" width="100%" alt="03 Impact"/>
 
-<img src="./assets/impact.svg" width="100%" alt="Career: AHEAD (Jan 2024 to present) for CareFirst BlueCross BlueShield, CSX, Stellantis and Intermex; STU Biz Solutions (Aug 2021 to Jan 2024) for HSBC. Outcomes: 100% of Critical/High cloud findings remediated to zero (CareFirst); 80% less monthly governance reporting effort (CareFirst); 43% cloud cost reduction, 67% faster image pipelines, MTTT/MTTR from 700h to 30h, and 700+ incidents resolved (Stellantis)."/>
+<img src="./assets/impact.svg" width="100%" alt="Career: AHEAD (Jan 2024 to present) for CareFirst BlueCross BlueShield, CSX, Stellantis and Intermex; STU Biz Solutions (Aug 2021 to Jan 2024) for HSBC. Outcomes: 100% of Critical/High cloud findings remediated to zero (CareFirst); 80% less monthly governance reporting effort (CareFirst); 43% cloud cost reduction, 67% faster image pipelines, MTTT/MTTR from 700h to 30h, and 700+ incidents resolved (Stellantis). Security posture (CareFirst, Wiz, Oct 2026): Wiz Security Score 100; HIPAA Security Rule 93%, up from 92%; HITRUST CSF v11.2 88%."/>
 
 <br/>
 

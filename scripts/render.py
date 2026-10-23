@@ -81,6 +81,13 @@ IMPACT = [
     ("700h→30h", "MTTT/MTTR, leading to contract extensions", "Stellantis", "pink"),
     ("700+", "incidents & service requests resolved", "Stellantis", "cyan"),
 ]
+# (score, unit, framework, note, color) — final Oct 2026 governance report (Wiz tenant-wide ratings)
+POSTURE_SCOPE = "CAREFIRST · WIZ · OCT 2026"
+POSTURE = [
+    (100, "", "Wiz Security Score", "tenant-wide · sustained", "green"),
+    (93, "%", "HIPAA Security Rule", "▲ up from 92% (Sep)", "cyan"),
+    (88, "%", "HITRUST CSF v11.2", "■ maintained", "violet"),
+]
 CAREER = [
     ("JAN 2024 — PRESENT", "AHEAD", "DevOps & Cloud Security Engineer",
      ["CareFirst BlueCross BlueShield", "CSX", "Stellantis", "Intermex"]),
@@ -731,7 +738,8 @@ def render_cert(issuer: str, level: str, name: str) -> str:
 
 # --------------------------------------------------------------------------- impact
 def render_impact() -> str:
-    W, H = 1000, 396
+    W, TOP = 1000, 396  # TOP = height of the timeline + outcomes area; the posture strip sits below it
+    H = TOP + 138
     style = """
 .tile{animation:tup .7s ease-out both}
 @keyframes tup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -747,10 +755,10 @@ def render_impact() -> str:
 
     # mission log (career timeline)
     lx, lw = 20, 360
-    b.append(f'''<rect x="{lx}" y="18" width="{lw}" height="{H - 36}" rx="12" fill="#ffffff" fill-opacity=".02" stroke="{C["line"]}"/>
+    b.append(f'''<rect x="{lx}" y="18" width="{lw}" height="{TOP - 36}" rx="12" fill="#ffffff" fill-opacity=".02" stroke="{C["line"]}"/>
 <text class="mono" x="{lx + 18}" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["muted"]}">MISSION LOG // CAREER</text>
-<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{H - 46}" stroke="url(#tl)" stroke-width="2"/>
-<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{H - 46}" stroke="#fff" stroke-opacity=".6" stroke-width="2" class="flow"/>''')
+<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{TOP - 46}" stroke="url(#tl)" stroke-width="2"/>
+<line x1="{lx + 28}" y1="72" x2="{lx + 28}" y2="{TOP - 46}" stroke="#fff" stroke-opacity=".6" stroke-width="2" class="flow"/>''')
     y = 82
     for k, (when, org, role, clients) in enumerate(CAREER):
         col = C["cyan"] if k == 0 else C["violet"]
@@ -774,7 +782,7 @@ def render_impact() -> str:
 
     # outcomes grid
     gx, gw, gap = 396, W - 396 - 20, 12
-    tw, th = (gw - 2 * gap) / 3, (H - 36 - 30 - gap) / 2
+    tw, th = (gw - 2 * gap) / 3, (TOP - 36 - 30 - gap) / 2
     b.append(f'<text class="mono" x="{gx + 4}" y="44" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["muted"]}">'
              f'OUTCOMES // MEASURED IMPACT</text>')
     for i, (val, label, client, col) in enumerate(IMPACT):
@@ -789,6 +797,26 @@ def render_impact() -> str:
 <text class="sans" x="{x + 14:.1f}" y="{y + 28 + fs + 10:.1f}" font-size="{fs:.1f}" font-weight="800" fill="url(#vg)">{esc(val)}</text>
 {"".join(f'<text class="mono" x="{x + 16:.1f}" y="{y + 28 + fs + 34 + j * 15:.1f}" font-size="10.5" fill="{C["muted"]}">{esc(t)}</text>' for j, t in enumerate(lines))}
 </g>''')
+
+    # security posture strip with animated gauges
+    sy, sh = TOP + 2, H - TOP - 20
+    b.append(f'''<rect x="20" y="{sy}" width="{W - 40}" height="{sh}" rx="12" fill="#ffffff" fill-opacity=".02" stroke="{C["line"]}"/>
+<text class="mono" x="38" y="{sy + 26}" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="{C["muted"]}">SECURITY POSTURE // {esc(POSTURE_SCOPE)}</text>''')
+    iw = (W - 40) / len(POSTURE)
+    for i, (score, unit, name, note, col) in enumerate(POSTURE):
+        colr = C[col]
+        x0 = 20 + i * iw
+        gx0, gy0, r = x0 + 58, sy + 74, 30
+        b.append(f'''<g class="tile" style="animation-delay:{.3 + i * .15:.2f}s">
+<circle cx="{gx0:.1f}" cy="{gy0}" r="{r}" stroke="{C["line"]}" stroke-width="6"/>
+<circle cx="{gx0:.1f}" cy="{gy0}" r="{r}" stroke="{colr}" stroke-width="6" stroke-linecap="round" pathLength="100"
+ stroke-dasharray="100" stroke-dashoffset="{100 - score}" transform="rotate(-90 {gx0:.1f} {gy0})" filter="url(#glow)">
+<animate attributeName="stroke-dashoffset" from="100" to="{100 - score}" dur="2.2s" begin="{.4 + i * .2:.1f}s" fill="freeze"/></circle>
+<text class="sans" x="{gx0:.1f}" y="{gy0 + 6}" text-anchor="middle" font-size="18" font-weight="800" fill="{C["text"]}">{score}{esc(unit)}</text>
+<text class="sans" x="{gx0 + 50:.1f}" y="{gy0 - 4}" font-size="16" font-weight="800" fill="{C["text"]}">{esc(name)}</text>
+<text class="mono" x="{gx0 + 50:.1f}" y="{gy0 + 16}" font-size="10.5" fill="{colr}">{esc(note)}</text></g>''')
+        if i:
+            b.append(f'<line x1="{x0:.1f}" y1="{sy + 44}" x2="{x0:.1f}" y2="{sy + sh - 14}" stroke="{C["line"]}" stroke-dasharray="2 4"/>')
     return svg(W, H, "\n".join(b), "Impact: career timeline and measured outcomes", style)
 
 
