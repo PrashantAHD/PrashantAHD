@@ -311,9 +311,10 @@ def render_header() -> str:
              f'<animate attributeName="x" calcMode="discrete" dur="{cycle:.3f}s" repeatCount="indefinite" '
              f'values="{vals}" keyTimes="{keys}"/></rect>')
 
-    p.append(f'''<text class="mono fade-in" x="58" y="224" font-size="12.5" fill="{C["ms"]}" style="animation-delay:.4s">◆ Microsoft Certified: Cybersecurity Architect Expert</text>
-<text class="mono fade-in" x="58" y="245" font-size="12.5" fill="{C["aws"]}" style="animation-delay:.5s">▲ AWS Certified DevOps Engineer – Professional</text>
-<text class="mono fade-in" x="58" y="268" font-size="12.5" fill="{C["muted"]}" xml:space="preserve" style="white-space:pre;animation-delay:.6s">{YEARS} YOE   ·   <tspan fill="{C["violet"]}">@AHEAD</tspan>   ·   Gurgaon, IN</text>''')
+    clients = "  ·  ".join(c for _, org, _, cl in CAREER for c in cl if c != "Intermex")
+    clients = clients.replace("CareFirst BlueCross BlueShield", "CareFirst")
+    p.append(f'''<text class="mono fade-in" x="58" y="232" font-size="12.5" fill="{C["muted"]}" xml:space="preserve" style="white-space:pre;animation-delay:.4s"><tspan fill="{C["green"]}">▸ Securing Fortune 500 clouds for</tspan>  <tspan fill="{C["text"]}">{esc(clients)}</tspan></text>
+<text class="mono fade-in" x="58" y="258" font-size="12.5" fill="{C["muted"]}" xml:space="preserve" style="white-space:pre;animation-delay:.6s">{YEARS} YOE   ·   <tspan fill="{C["amber"]}">{len(CERTS)}× Certified</tspan>   ·   <tspan fill="{C["violet"]}">@AHEAD</tspan>   ·   Gurgaon, IN</text>''')
 
     # radar + shield
     sweep = [f'<g><animateTransform attributeName="transform" type="rotate" from="0 {rx} {ry}" to="360 {rx} {ry}" dur="4s" repeatCount="indefinite"/>']
