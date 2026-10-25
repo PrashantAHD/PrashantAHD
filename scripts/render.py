@@ -95,15 +95,15 @@ CAREER = [
 ]
 
 PROJECTS = [
-    dict(repo="Cloud-Security-Remediations", public=True, file="project-remediations", client="CareFirst",
-         tagline="From Wiz findings to informed action.",
-         desc="AI-assisted remediation via Wiz MCP across AWS & Azure: evidence-backed risk analysis, "
-              "stakeholder reports and approval-gated, ServiceNow-governed changes with verified closure.",
+    dict(repo="WizExpert", public=True, file="project-wizexpert", client="CareFirst",
+         tagline="Analyze. Report. Validate. Coordinate. Remediate.",
+         desc="Independent Wiz MCP assistant for AWS & Azure: evidence-backed risk analysis, stakeholder "
+              "reports and approval-gated, ServiceNow-governed remediation with verified closure.",
          tags=["Wiz MCP", "AWS", "Azure", "AI-assisted"]),
-    dict(repo="wiz-reporting", public=False, file="project-wiz-reporting", client="CareFirst",
+    dict(repo="wiz-governance-reporter", public=False, file="project-wiz-governance-reporter", client="CareFirst",
          tagline="Cloud security governance, automated.",
-         desc="Turns Wiz exports into monthly governance workbooks and executive PowerPoint dashboards "
-              "with baseline carry-forward and SHA-256 provenance, cutting reporting effort by 80%.",
+         desc="Turns Wiz exports into governance workbooks, executive dashboards and operational "
+              "presentations with baseline carry-forward, cutting reporting effort by 80%.",
          tags=["Wiz", "Governance", "-80% effort"]),
     dict(repo="Azure-Storage-Analysis", public=True, file="project-azure-finops", client="CSX",
          tagline="Azure storage cost intelligence (FinOps).",
@@ -115,6 +115,11 @@ PROJECTS = [
          desc="Bulk team membership, repo permissions, Actions secret access and Copilot cloud-agent "
               "enablement, significantly cutting manual access-request effort.",
          tags=["GitHub API", "IAM", "Automation"]),
+    dict(repo="Agent-Doorbell", public=True, file="project-agent-doorbell", label="OPEN SOURCE", wide=True,
+         tagline="Human-in-the-loop for AI coding agents, from your phone.",
+         desc="Your VS Code Copilot agents ring your phone when they need you: approve commands, answer questions "
+              "and send prompts from Telegram. Laptop-first, first answer wins, signed local traffic, fails safe.",
+         tags=["VS Code", "GitHub Copilot", "Telegram", "Human-in-the-loop", "96 tests"]),
 ]
 
 SECTIONS = [
@@ -587,7 +592,8 @@ LANG_COLORS = {"Python": "#3572A5", "PowerShell": "#012456", "Shell": "#89e051",
 
 
 def render_project(p: dict, live: dict) -> str:
-    W, H = 490, 236
+    wide = p.get("wide", False)
+    W, H = (1000, 206) if wide else (490, 236)
     info = live.get(p["repo"], {})
     lang = info.get("lang") or "Python"
     lcol = info.get("color") or LANG_COLORS.get(lang, C["cyan"])
@@ -605,12 +611,13 @@ def render_project(p: dict, live: dict) -> str:
     b.append(f'<rect x="22" y="20" width="{bw:.0f}" height="22" rx="11" fill="{ac}" fill-opacity=".1" stroke="{ac}" stroke-opacity=".5"/>'
              f'<text class="mono" x="{22 + bw / 2:.0f}" y="35" text-anchor="middle" font-size="10" font-weight="700" '
              f'letter-spacing="1" fill="{ac}">{badge}</text>')
-    if p.get("client"):
-        cl = f"CLIENT · {p['client'].upper()}"
-        cw = len(cl) * 10 * CW + 20
-        b.append(f'<rect x="{30 + bw:.0f}" y="20" width="{cw:.0f}" height="22" rx="11" fill="{C["violet"]}" fill-opacity=".12" '
-                 f'stroke="{C["violet"]}" stroke-opacity=".6"/><text class="mono" x="{30 + bw + cw / 2:.0f}" y="35" '
-                 f'text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="{C["violet"]}">{esc(cl)}</text>')
+    pill = f"CLIENT · {p['client'].upper()}" if p.get("client") else p.get("label")
+    if pill:
+        pc = C["violet"] if p.get("client") else C["green"]
+        cw = len(pill) * 10 * CW + 20
+        b.append(f'<rect x="{30 + bw:.0f}" y="20" width="{cw:.0f}" height="22" rx="11" fill="{pc}" fill-opacity=".12" '
+                 f'stroke="{pc}" stroke-opacity=".6"/><text class="mono" x="{30 + bw + cw / 2:.0f}" y="35" '
+                 f'text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="{pc}">{esc(pill)}</text>')
     meta = f'<tspan fill="{lcol}">●</tspan> {esc(lang)}'
     if p["public"] and info.get("stars"):
         meta += f'   <tspan fill="{C["amber"]}">★</tspan> {info.get("stars", 0)}'
@@ -619,7 +626,9 @@ def render_project(p: dict, live: dict) -> str:
     title = p["repo"]
     b.append(f'<text class="sans" x="22" y="82" font-size="23" font-weight="800" fill="{C["text"]}">{esc(title)}</text>')
     b.append(f'<text class="mono" x="22" y="106" font-size="12" fill="{ac}">› {esc(p["tagline"])}</text>')
-    wrap = textwrap.wrap(p["desc"], 64)[:3]
+    wrap = textwrap.wrap(p["desc"], 132 if wide else 64)
+    if len(wrap) > (2 if wide else 3):
+        raise ValueError(f"{p['repo']}: description too long for the card ({len(wrap)} lines)")
     for k, ln in enumerate(wrap):
         b.append(f'<text class="sans" x="22" y="{134 + k * 19}" font-size="13.5" fill="#b4bfd3">{esc(ln)}</text>')
     x = 22

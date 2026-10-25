@@ -63,12 +63,15 @@
 <img src="./assets/section-06.svg" width="100%" alt="06 Operations"/>
 
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Cloud-Security-Remediations"><img src="./assets/project-remediations.svg" width="49%" alt="Cloud-Security-Remediations (CareFirst)"/></a>
-  <img src="./assets/project-wiz-reporting.svg" width="49%" alt="wiz-reporting (private, CareFirst)"/>
+  <a href="https://github.com/PrashantAHD/WizExpert"><img src="./assets/project-wizexpert.svg" width="49%" alt="WizExpert (CareFirst)"/></a>
+  <img src="./assets/project-wiz-governance-reporter.svg" width="49%" alt="wiz-governance-reporter (private, CareFirst)"/>
 </p>
 <p align="center">
   <a href="https://github.com/PrashantAHD/Azure-Storage-Analysis"><img src="./assets/project-azure-finops.svg" width="49%" alt="Azure-Storage-Analysis (CSX)"/></a>
   <a href="https://github.com/PrashantAHD/github_access_tool"><img src="./assets/project-github-access.svg" width="49%" alt="github_access_tool (CSX)"/></a>
+</p>
+<p align="center">
+  <a href="https://github.com/PrashantAHD/Agent-Doorbell"><img src="./assets/project-agent-doorbell.svg" width="98.5%" alt="Agent-Doorbell (open source): your VS Code Copilot agents ring your phone when they need you"/></a>
 </p>
 
 <br/>
