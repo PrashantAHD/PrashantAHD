@@ -95,16 +95,11 @@ CAREER = [
 ]
 
 PROJECTS = [
-    dict(repo="WizExpert", public=True, file="project-wizexpert", client="CareFirst",
+    dict(repo="WizExpert", public=True, file="project-wizexpert", client="CareFirst", wide=True,
          tagline="Analyze. Report. Validate. Coordinate. Remediate.",
-         desc="Independent Wiz MCP assistant for AWS & Azure: evidence-backed risk analysis, stakeholder "
-              "reports and approval-gated, ServiceNow-governed remediation with verified closure.",
-         tags=["Wiz MCP", "AWS", "Azure", "AI-assisted"]),
-    dict(repo="wiz-governance-reporter", public=False, file="project-wiz-governance-reporter", client="CareFirst",
-         tagline="Cloud security governance, automated.",
-         desc="Turns Wiz exports into governance workbooks, executive dashboards and operational "
-              "presentations with baseline carry-forward, cutting reporting effort by 80%.",
-         tags=["Wiz", "Governance", "-80% effort"]),
+         desc="Independent Wiz MCP assistant for AWS & Azure: evidence-led investigation, monthly governance workbooks and "
+              "executive dashboards, and approval-gated, ServiceNow-governed remediation verified with fresh Wiz evidence.",
+         tags=["Wiz MCP", "AWS", "Azure", "Governance", "ServiceNow", "-80% reporting effort", "600+ tests"]),
     dict(repo="Azure-Storage-Analysis", public=True, file="project-azure-finops", client="CSX",
          tagline="Azure storage cost intelligence (FinOps).",
          desc="Single-command analysis across subscriptions: savings opportunities, 8-sheet "
@@ -115,11 +110,16 @@ PROJECTS = [
          desc="Bulk team membership, repo permissions, Actions secret access and Copilot cloud-agent "
               "enablement, significantly cutting manual access-request effort.",
          tags=["GitHub API", "IAM", "Automation"]),
-    dict(repo="Agent-Doorbell", public=True, file="project-agent-doorbell", label="OPEN SOURCE", wide=True,
-         tagline="Human-in-the-loop for AI coding agents, from your phone.",
-         desc="Your VS Code Copilot agents ring your phone when they need you: approve commands, answer questions "
-              "and send prompts from Telegram. Laptop-first, first answer wins, signed local traffic, fails safe.",
-         tags=["VS Code", "GitHub Copilot", "Telegram", "Human-in-the-loop", "96 tests"]),
+    dict(repo="Agent-Doorbell", public=True, file="project-agent-doorbell", label="OPEN SOURCE",
+         tagline="Human-in-the-loop for AI agents, from your phone.",
+         desc="VS Code Copilot, Claude and Codex agents ring your phone when they need you: approve commands, "
+              "answer questions and send prompts from Telegram.",
+         tags=["Copilot", "Telegram", "106 tests"]),
+    dict(repo="spend-guard", public=True, file="project-spend-guard", label="OPEN SOURCE",
+         tagline="Stop paying top-model prices for routine AI work.",
+         desc="A GitHub Copilot skill that keeps routine work on cheap models, hands code and security review "
+              "to stronger ones, and caps chats at ~100k tokens with a handoff.",
+         tags=["GitHub Copilot", "Model routing", "38 tests"]),
 ]
 
 SECTIONS = [
@@ -631,12 +631,14 @@ def render_project(p: dict, live: dict) -> str:
         raise ValueError(f"{p['repo']}: description too long for the card ({len(wrap)} lines)")
     for k, ln in enumerate(wrap):
         b.append(f'<text class="sans" x="22" y="{134 + k * 19}" font-size="13.5" fill="#b4bfd3">{esc(ln)}</text>')
+    cta = "OPEN REPO ↗" if p["public"] else "◆ INTERNAL TOOLING"
     x = 22
     for tg in p["tags"]:
         el, w = chip(x, H - 40, tg, ac, 10.5, 22)
         b.append(el)
         x += w + 7
-    cta = "OPEN REPO ↗" if p["public"] else "◆ INTERNAL TOOLING"
+    if x > W - 22 - len(cta) * (11 * CW + 1.5) - 8:
+        raise ValueError(f"{p['repo']}: tags overlap the '{cta}' label")
     b.append(f'<text class="mono" x="{W - 22}" y="{H - 24}" text-anchor="end" font-size="11" font-weight="700" '
              f'letter-spacing="1.5" fill="{ac}">{cta}</text>')
     return svg(W, H, "\n".join(b), f"{title}: {p['tagline']}", style)

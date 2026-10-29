@@ -45,7 +45,7 @@
 <rect x="734" y="19" width="58" height="22" rx="11" fill="#00ff9d" fill-opacity=".12" stroke="#00ff9d" stroke-opacity=".6"/>
 <circle cx="748" cy="30" r="3.5" fill="#00ff9d" class="blink"/>
 <text class="mono" x="757" y="34" font-size="10.5" font-weight="700" fill="#00ff9d">LIVE</text>
-<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-29 09:58 UTC</text>
+<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-29 16:46 UTC</text>
 <g class="tile" style="animation-delay:0.00s">
 <rect x="20.0" y="56" width="182.4" height="94" rx="12" fill="#00e5ff" fill-opacity=".05" stroke="#00e5ff" stroke-opacity=".3"/>
 <rect x="20.0" y="74" width="3" height="58" rx="1.5" fill="#00e5ff" filter="url(#glow)"/>
@@ -62,7 +62,7 @@
 <rect x="408.8" y="56" width="182.4" height="94" rx="12" fill="#8b5cf6" fill-opacity=".05" stroke="#8b5cf6" stroke-opacity=".3"/>
 <rect x="408.8" y="74" width="3" height="58" rx="1.5" fill="#8b5cf6" filter="url(#glow)"/>
 <text class="mono" x="426.8" y="80" font-size="10" font-weight="700" letter-spacing="1.6" fill="#8b5cf6">ACTIVE DAYS</text>
-<text class="sans" x="424.8" y="120" font-size="34" font-weight="800" fill="url(#num)">19</text>
+<text class="sans" x="424.8" y="120" font-size="34" font-weight="800" fill="url(#num)">18</text>
 <text class="mono" x="426.8" y="138" font-size="9.5" fill="#7d8aa5">last 12 months</text></g>
 <g class="tile" style="animation-delay:0.36s">
 <rect x="603.2" y="56" width="182.4" height="94" rx="12" fill="#ff2e88" fill-opacity=".05" stroke="#ff2e88" stroke-opacity=".3"/>
