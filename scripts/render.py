@@ -100,16 +100,11 @@ PROJECTS = [
          desc="Independent Wiz MCP assistant for AWS & Azure: evidence-led investigation, monthly governance workbooks and "
               "executive dashboards, and approval-gated, ServiceNow-governed remediation verified with fresh Wiz evidence.",
          tags=["Wiz MCP", "AWS", "Azure", "Governance", "ServiceNow", "-80% reporting effort", "600+ tests"]),
-    dict(repo="Azure-Storage-Analysis", public=True, file="project-azure-finops", client="CSX",
-         tagline="Azure storage cost intelligence (FinOps).",
-         desc="Single-command analysis across subscriptions: savings opportunities, 8-sheet "
-              "executive Excel reports and a live web dashboard.",
-         tags=["Azure", "FinOps", "Dashboards"]),
-    dict(repo="github_access_tool", public=True, file="project-github-access", client="CSX",
+    dict(repo="Git-Admin", public=True, file="project-git-admin", client="CSX", wide=True,
          tagline="GitHub org access ops, zero dependencies.",
-         desc="Bulk team membership, repo permissions, Actions secret access and Copilot cloud-agent "
-              "enablement, significantly cutting manual access-request effort.",
-         tags=["GitHub API", "IAM", "Automation"]),
+         desc="Single-file Python CLI for bulk GitHub org administration: team membership, repository permissions, "
+              "Artifactory Actions-secret access and Copilot cloud-agent enablement, with confirmations and per-repo results.",
+         tags=["Python", "GitHub API", "IAM", "Least privilege", "Copilot", "Zero dependencies"]),
     dict(repo="Agent-Doorbell", public=True, file="project-agent-doorbell", label="OPEN SOURCE",
          tagline="Human-in-the-loop for AI agents, from your phone.",
          desc="VS Code Copilot, Claude and Codex agents ring your phone when they need you: approve commands, "

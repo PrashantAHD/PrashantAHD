@@ -45,7 +45,7 @@
 <rect x="734" y="19" width="58" height="22" rx="11" fill="#00ff9d" fill-opacity=".12" stroke="#00ff9d" stroke-opacity=".6"/>
 <circle cx="748" cy="30" r="3.5" fill="#00ff9d" class="blink"/>
 <text class="mono" x="757" y="34" font-size="10.5" font-weight="700" fill="#00ff9d">LIVE</text>
-<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-29 16:47 UTC</text>
+<text class="mono" x="978" y="34" text-anchor="end" font-size="11" fill="#7d8aa5">sync 2026-10-29 17:34 UTC</text>
 <g class="tile" style="animation-delay:0.00s">
 <rect x="20.0" y="56" width="182.4" height="94" rx="12" fill="#00e5ff" fill-opacity=".05" stroke="#00e5ff" stroke-opacity=".3"/>
 <rect x="20.0" y="74" width="3" height="58" rx="1.5" fill="#00e5ff" filter="url(#glow)"/>
@@ -62,7 +62,7 @@
 <rect x="408.8" y="56" width="182.4" height="94" rx="12" fill="#8b5cf6" fill-opacity=".05" stroke="#8b5cf6" stroke-opacity=".3"/>
 <rect x="408.8" y="74" width="3" height="58" rx="1.5" fill="#8b5cf6" filter="url(#glow)"/>
 <text class="mono" x="426.8" y="80" font-size="10" font-weight="700" letter-spacing="1.6" fill="#8b5cf6">ACTIVE DAYS</text>
-<text class="sans" x="424.8" y="120" font-size="34" font-weight="800" fill="url(#num)">19</text>
+<text class="sans" x="424.8" y="120" font-size="34" font-weight="800" fill="url(#num)">18</text>
 <text class="mono" x="426.8" y="138" font-size="9.5" fill="#7d8aa5">last 12 months</text></g>
 <g class="tile" style="animation-delay:0.36s">
 <rect x="603.2" y="56" width="182.4" height="94" rx="12" fill="#ff2e88" fill-opacity=".05" stroke="#ff2e88" stroke-opacity=".3"/>
@@ -88,10 +88,10 @@
 <text class="mono" x="650" y="188" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#7d8aa5">LANGUAGE MIX // PUBLIC REPOS</text>
 <clipPath id="lb"><rect x="650" y="204" width="312" height="10" rx="5"/></clipPath>
 <rect x="650" y="204" width="312" height="10" rx="5" fill="#14304a"/>
-<g clip-path="url(#lb)"><rect class="grow" style="animation-delay:0.30s" x="650.0" y="204" width="307.2" height="10" fill="#3572A5"/><rect class="grow" style="animation-delay:0.45s" x="957.2" y="204" width="1.7" height="10" fill="#012456"/><rect class="grow" style="animation-delay:0.60s" x="958.9" y="204" width="1.6" height="10" fill="#89e051"/><rect class="grow" style="animation-delay:0.75s" x="960.5" y="204" width="1.5" height="10" fill="#f1e05a"/></g>
-<circle cx="656" cy="236" r="4.5" fill="#3572A5"/><text class="mono" x="668" y="240" font-size="11.5" fill="#e6edf3">Python</text><text class="mono" x="962" y="240" text-anchor="end" font-size="11.5" fill="#7d8aa5">98.5%</text>
-<circle cx="656" cy="255" r="4.5" fill="#012456"/><text class="mono" x="668" y="259" font-size="11.5" fill="#e6edf3">PowerShell</text><text class="mono" x="962" y="259" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.5%</text>
-<circle cx="656" cy="274" r="4.5" fill="#89e051"/><text class="mono" x="668" y="278" font-size="11.5" fill="#e6edf3">Shell</text><text class="mono" x="962" y="278" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.5%</text>
-<circle cx="656" cy="293" r="4.5" fill="#f1e05a"/><text class="mono" x="668" y="297" font-size="11.5" fill="#e6edf3">JavaScript</text><text class="mono" x="962" y="297" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.5%</text>
-<text class="mono" x="20" y="330" font-size="10" fill="#3a4660">public repos: 6  ·  stars: 1  ·  on GitHub since 2024  ·  auto-rendered daily by scripts/render.py via GitHub Actions</text>
+<g clip-path="url(#lb)"><rect class="grow" style="animation-delay:0.30s" x="650.0" y="204" width="306.2" height="10" fill="#3572A5"/><rect class="grow" style="animation-delay:0.45s" x="956.2" y="204" width="2.0" height="10" fill="#012456"/><rect class="grow" style="animation-delay:0.60s" x="958.3" y="204" width="1.9" height="10" fill="#89e051"/><rect class="grow" style="animation-delay:0.75s" x="960.2" y="204" width="1.8" height="10" fill="#f1e05a"/></g>
+<circle cx="656" cy="236" r="4.5" fill="#3572A5"/><text class="mono" x="668" y="240" font-size="11.5" fill="#e6edf3">Python</text><text class="mono" x="962" y="240" text-anchor="end" font-size="11.5" fill="#7d8aa5">98.1%</text>
+<circle cx="656" cy="255" r="4.5" fill="#012456"/><text class="mono" x="668" y="259" font-size="11.5" fill="#e6edf3">PowerShell</text><text class="mono" x="962" y="259" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.7%</text>
+<circle cx="656" cy="274" r="4.5" fill="#89e051"/><text class="mono" x="668" y="278" font-size="11.5" fill="#e6edf3">Shell</text><text class="mono" x="962" y="278" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.6%</text>
+<circle cx="656" cy="293" r="4.5" fill="#f1e05a"/><text class="mono" x="668" y="297" font-size="11.5" fill="#e6edf3">JavaScript</text><text class="mono" x="962" y="297" text-anchor="end" font-size="11.5" fill="#7d8aa5">0.6%</text>
+<text class="mono" x="20" y="330" font-size="10" fill="#3a4660">public repos: 5  ·  stars: 0  ·  on GitHub since 2024  ·  auto-rendered daily by scripts/render.py via GitHub Actions</text>
 </svg>

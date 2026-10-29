@@ -66,8 +66,7 @@
   <a href="https://github.com/PrashantAHD/WizExpert"><img src="./assets/project-wizexpert.svg" width="98.5%" alt="WizExpert (CareFirst): Wiz MCP investigation, monthly governance reporting and approval-gated remediation"/></a>
 </p>
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Azure-Storage-Analysis"><img src="./assets/project-azure-finops.svg" width="49%" alt="Azure-Storage-Analysis (CSX)"/></a>
-  <a href="https://github.com/PrashantAHD/github_access_tool"><img src="./assets/project-github-access.svg" width="49%" alt="github_access_tool (CSX)"/></a>
+  <a href="https://github.com/PrashantAHD/Git-Admin"><img src="./assets/project-git-admin.svg" width="98.5%" alt="Git-Admin (CSX): single-file Python CLI for bulk GitHub org access administration"/></a>
 </p>
 <p align="center">
   <a href="https://github.com/PrashantAHD/Agent-Doorbell"><img src="./assets/project-agent-doorbell.svg" width="49%" alt="Agent-Doorbell (open source): AI coding agents ring your phone when they need you"/></a>
