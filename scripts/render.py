@@ -96,10 +96,10 @@ CAREER = [
 
 PROJECTS = [
     dict(repo="WizExpert", public=True, file="project-wizexpert", client="CareFirst", wide=True,
-         tagline="Analyze. Report. Validate. Coordinate. Remediate.",
-         desc="Independent Wiz MCP assistant for AWS & Azure: evidence-led investigation, monthly governance workbooks and "
-              "executive dashboards, and approval-gated, ServiceNow-governed remediation verified with fresh Wiz evidence.",
-         tags=["Wiz MCP", "AWS", "Azure", "Governance", "ServiceNow", "-80% reporting effort", "600+ tests"]),
+         tagline="Analyze. Communicate. Remediate. Validate. Update.",
+         desc="Independent Wiz MCP reporting assistant for AWS & Azure: Risk Issues plus daily, weekly and monthly governance "
+              "reporting, approval-gated remediation and fresh-evidence validation, run from a local VS Code agent console.",
+         tags=["Wiz MCP", "AWS + Azure", "4 report workflows", "Agent console", "-80% reporting effort", "Bandit · pip-audit"]),
     dict(repo="Git-Admin", public=True, file="project-git-admin", client="CSX", wide=True,
          tagline="GitHub org access ops, zero dependencies.",
          desc="Single-file Python CLI for bulk GitHub org administration: team membership, repository permissions, "
@@ -112,8 +112,8 @@ PROJECTS = [
          tags=["Copilot", "Telegram", "106 tests"]),
     dict(repo="spend-guard", public=True, file="project-spend-guard", label="OPEN SOURCE",
          tagline="Stop paying top-model prices for routine AI work.",
-         desc="A GitHub Copilot skill that keeps routine work on cheap models, hands code and security review "
-              "to stronger ones, and caps chats at ~100k tokens with a handoff.",
+         desc="A GitHub Copilot skill that scans each project to draft its routing: routine work on cheap models, "
+              "code and security review on stronger ones, ~100k-token chat handoffs.",
          tags=["GitHub Copilot", "Model routing", "38 tests"]),
 ]
 

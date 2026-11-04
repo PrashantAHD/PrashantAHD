@@ -63,7 +63,7 @@
 <img src="./assets/section-06.svg" width="100%" alt="06 Operations"/>
 
 <p align="center">
-  <a href="https://github.com/PrashantAHD/WizExpert"><img src="./assets/project-wizexpert.svg" width="98.5%" alt="WizExpert (CareFirst): Wiz MCP investigation, monthly governance reporting and approval-gated remediation"/></a>
+  <a href="https://github.com/PrashantAHD/WizExpert"><img src="./assets/project-wizexpert.svg" width="98.5%" alt="WizExpert (CareFirst): Wiz MCP reporting assistant with Risk Issues, daily, weekly and monthly governance workflows and approval-gated remediation"/></a>
 </p>
 <p align="center">
   <a href="https://github.com/PrashantAHD/Git-Admin"><img src="./assets/project-git-admin.svg" width="98.5%" alt="Git-Admin (CSX): single-file Python CLI for bulk GitHub org access administration"/></a>
