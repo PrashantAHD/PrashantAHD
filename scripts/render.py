@@ -112,9 +112,9 @@ PROJECTS = [
          tags=["Copilot", "Telegram", "106 tests"]),
     dict(repo="spend-guard", public=True, file="project-spend-guard", label="OPEN SOURCE",
          tagline="Stop paying top-model prices for routine AI work.",
-         desc="A GitHub Copilot skill that scans each project to draft its routing: routine work on cheap models, "
-              "code and security review on stronger ones, ~100k-token chat handoffs.",
-         tags=["GitHub Copilot", "Model routing", "38 tests"]),
+         desc="Copilot skill routing routine work to cheap models and review to stronger ones. In production: "
+              "cost per call 21 -> 1.8 credits (-91%), ~92% weekly saving (~$1.5k).",
+         tags=["GitHub Copilot", "-91% cost/call", "38 tests"]),
 ]
 
 SECTIONS = [
