@@ -14,7 +14,7 @@
 
 <img src="./assets/section-01.svg" width="100%" alt="01 Whoami"/>
 
-<img src="./assets/terminal.svg" width="100%" alt="whoami: Prashant Kumar, Cloud Security &amp; DevSecOps Engineer at AHEAD, Gurgaon. 5+ years securing and scaling Fortune 500 cloud platforms for CareFirst, CSX, Stellantis, Intermex and HSBC. Microsoft Certified: Cybersecurity Architect Expert; AWS Certified DevOps Engineer – Professional; plus 5 more certifications. Contact: Prashant271227@gmail.com."/>
+<img src="./assets/terminal.svg" width="100%" alt="whoami: Prashant Kumar, Cloud Security &amp; DevSecOps Engineer at AHEAD, Gurgaon. 5+ years securing and scaling Fortune 500 cloud platforms for CareFirst, CSX, Stellantis, Intermex and HSBC. Currently collaborating with Vulnerability Management and CyberOps on the five-CVE NGINX response. Microsoft Certified: Cybersecurity Architect Expert; AWS Certified DevOps Engineer – Professional; plus 5 more certifications. Contact: Prashant271227@gmail.com."/>
 
 <br/>
 
@@ -63,14 +63,16 @@
 <img src="./assets/section-06.svg" width="100%" alt="06 Operations"/>
 
 <p align="center">
-  <a href="https://github.com/PrashantAHD/WizExpert"><img src="./assets/project-wizexpert.svg" width="98.5%" alt="WizExpert (CareFirst): Wiz MCP reporting assistant with Risk Issues, daily, weekly and monthly governance workflows and approval-gated remediation"/></a>
+  <a href="https://github.com/PrashantAHD/WizExpert" title="Open the WizExpert repository"><img src="./assets/project-wizexpert.svg" width="98.5%" alt="WizExpert (CareFirst): Wiz MCP reporting assistant with Risk Issues, daily, weekly and monthly governance workflows and approval-gated remediation"/></a>
+  <br/>
+  <a href="https://prashantahd.github.io/WizExpert/docs/demo/"><strong>Watch the WizExpert workflow tour ↗</strong></a>
 </p>
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Git-Admin"><img src="./assets/project-git-admin.svg" width="98.5%" alt="Git-Admin (CSX): single-file Python CLI for bulk GitHub org access administration"/></a>
+  <a href="https://github.com/PrashantAHD/Git-Admin" title="Open the Git-Admin repository"><img src="./assets/project-git-admin.svg" width="98.5%" alt="Git-Admin (CSX): single-file Python CLI for bulk GitHub org access administration"/></a>
 </p>
 <p align="center">
-  <a href="https://github.com/PrashantAHD/Agent-Doorbell"><img src="./assets/project-agent-doorbell.svg" width="49%" alt="Agent-Doorbell (open source): AI coding agents ring your phone when they need you"/></a>
-  <a href="https://github.com/PrashantAHD/spend-guard"><img src="./assets/project-spend-guard.svg" width="49%" alt="spend-guard (open source): GitHub Copilot skill that routes routine work to cheaper models"/></a>
+  <a href="https://github.com/PrashantAHD/Agent-Doorbell" title="Open the Agent-Doorbell repository"><img src="./assets/project-agent-doorbell.svg" width="49%" alt="Agent-Doorbell (open source): AI coding agents ring your phone when they need you"/></a>
+  <a href="https://github.com/PrashantAHD/spend-guard" title="Open the spend-guard repository"><img src="./assets/project-spend-guard.svg" width="49%" alt="spend-guard (open source): GitHub Copilot skill that routes routine work to cheaper models"/></a>
 </p>
 
 <br/>
