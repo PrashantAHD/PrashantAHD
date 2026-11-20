@@ -128,6 +128,10 @@ button {
   letter-spacing: -0.5px;
 }
 
+.site-header .brand {
+  font-size: 13px;
+}
+
 .brand-mark {
   display: grid;
   width: 34px;
@@ -1357,6 +1361,10 @@ h1 {
 }
 
 @media (max-width: 760px) {
+  .site-header .brand {
+    font-size: 11px;
+  }
+
   .ambient {
     display: none;
   }
